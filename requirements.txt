@@ -1,0 +1,4 @@
+click==7.0
+PyYAML==3.12
+openpyxl==2.5.4
+git+https://opendev.org/airship/spyglass.git
