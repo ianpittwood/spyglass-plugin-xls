@@ -24,6 +24,7 @@ setup(
     license='Apache 2.0',
     packages=find_packages(),
     install_requires=[
+        'click==7.0',
         'PyYAML==3.12',
         'openpyxl==2.5.4',
     ],

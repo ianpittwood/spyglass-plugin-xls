@@ -23,6 +23,7 @@ LOG = logging.getLogger(__name__)
 
 
 class ExcelPlugin(BaseDataSourcePlugin):
+
     def __init__(self, region):
         LOG.info("Excel Plugin Initializing")
         self.source_type = "excel"
@@ -107,12 +108,9 @@ class ExcelPlugin(BaseDataSourcePlugin):
         for rack in rackwise_hosts.keys():
             for host in rackwise_hosts[rack]:
                 host_list.append({
-                    "rack_name":
-                    rack,
-                    "name":
-                    host,
-                    "host_profile":
-                    ipmi_data[host]["host_profile"],
+                    "rack_name": rack,
+                    "name": host,
+                    "host_profile": ipmi_data[host]["host_profile"],
                 })
         return host_list
 
